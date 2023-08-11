@@ -36,8 +36,8 @@ def extract_vector(model, image_path):
     return vector
 
 # Dinh nghia anh can tim kiem
-#search_image = "testimage/lion.jpeg"
-search_image = "dataset/4571.jpg"
+search_image = "testimage/cat.jpg"
+#search_image = "dataset/4571.jpg"
 
 # Khoi tao model
 model = get_extract_model()
@@ -53,7 +53,7 @@ paths = pickle.load(open("paths.pkl","rb"))
 distance = np.linalg.norm(vectors - search_vector, axis=1)
 
 # Sap xep va lay ra K vector co khoang cach ngan nhat
-K = 16
+K = 4
 ids = np.argsort(distance)[:K]
 
 # Tao oputput
@@ -63,8 +63,8 @@ nearest_image = [(paths[id], distance[id]) for id in ids]
 import matplotlib.pyplot as plt
 
 axes = []
-grid_size = int(math.sqrt(K))
-fig = plt.figure(figsize=(10,5))
+grid_size = int(math.sqrt(K))###
+fig = plt.figure(figsize=(5,5))
 
 
 for id in range(K):

@@ -31,7 +31,7 @@ def extract_vector(model, image_path):
 
     # Trich dac trung
     vector = model.predict(img_tensor)[0]
-    # Chuan hoa vector = chia chia L2 norm (tu google search)
+    # Chuan hoa vector = chia L2 norm (tu google search)
     vector = vector / np.linalg.norm(vector)
     return vector
 
