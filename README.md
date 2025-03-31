@@ -13,59 +13,27 @@ _Face recognition by using Similarity Measure and Vectorized Images_
 ## **🚀 Installation & Setup**  
 ### **1️⃣ Clone the repository**  
 ```bash
-git clone https://github.com/baogiang632/your-repository.git
-cd your-repository
+git clone https://github.com/baogiang632/ImageRetrieval.git
 ```
 ### **2️⃣ Install dependencies**  
 ```bash
 pip install -r requirements.txt
 ```
-### **3️⃣ Run the project**  
-For training:  
-```bash
-python train.py --dataset path/to/dataset
-```
-For inference:  
-```bash
-python predict.py --image path/to/image.jpg
-```
-
-## **📊 Results & Performance**  
-_(Optional but valuable: Include accuracy metrics, model performance, or a comparison table.)_  
-
-| Model  | Accuracy | Precision | Recall |
-|--------|----------|-----------|--------|
-| ResNet50 | 92% | 91% | 93% |
-| EfficientNetB3 | 94% | 93% | 95% |
-
 ## **📂 Dataset**  
-_(If applicable, mention the dataset used and provide links if public.)_  
-- **Dataset Name:** CheXpert, COCO, KITTI, etc.  
-- **Preprocessing Steps:** (e.g., Data augmentation, normalization)  
+- **Dataset Name:** Pins Face Recognition
+- **Download link:** https://www.kaggle.com/datasets/hereisburak/pins-face-recognition
+- After unzipping, we'll have this folder: ![image](https://github.com/user-attachments/assets/bdd87e06-fd0b-4d9c-9aaa-9a32839056d1)
+
 
 ## **📖 Usage Examples**  
-_(Add sample usage or demo images)_  
+**1.** Run the "store_vectors.py" file to vectorize the data images  
+**2.** Before run the "search_image.py" file, you can change input image at **search_image**:  
 
 ```python
-from model import load_model
-model = load_model("best_model.pth")
-prediction = model.predict("sample_image.jpg")
+### -------------------- Main -------------------- ###
+
+# Định nghĩa ảnh cần tìm kiếm
+#   Adriana Lima0_0.jpg | Adriana Lima cut.jpg | Adriana_Lima.jpg | output_face_face1.jpg
+search_image = "testimage\Adriana_Lima.jpg" 
 ```
 
-## **📝 To-Do List**  
-_(Optional: Mention future improvements or planned features.)_  
-- [ ] Optimize model for mobile deployment  
-- [ ] Improve dataset preprocessing  
-- [ ] Train on larger datasets  
-
-## **🤝 Contributing**  
-1. Fork the repository  
-2. Create a new branch (`feature-xyz`)  
-3. Commit your changes  
-4. Open a Pull Request  
-
-## **🔗 References & Acknowledgments**  
-_(Optional: Add links to research papers, datasets, or inspirations for your project.)_  
-
-## **📜 License**  
-This project is licensed under the **MIT License** – see the LICENSE file for details.
