@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## **📂 Dataset**  
 - **Dataset Name:** Pins Face Recognition
 - **Download link:** https://www.kaggle.com/datasets/hereisburak/pins-face-recognition
-- After unzipping, we'll have this folder: ![image](https://github.com/user-attachments/assets/bdd87e06-fd0b-4d9c-9aaa-9a32839056d1)
+- After unzipping it in the _dataset_ folder, we'll have this folder: ![image](https://github.com/user-attachments/assets/bdd87e06-fd0b-4d9c-9aaa-9a32839056d1)
 
 
 ## **📖 Usage Examples**  
